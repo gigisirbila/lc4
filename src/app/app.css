@@ -1,0 +1,18 @@
+.center-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  padding: 5rem;
+}
+
+app-todo-components {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+app-random-todo,
+app-counter-todo {
+  display: flex;
+  justify-content: center;
+}

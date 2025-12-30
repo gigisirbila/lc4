@@ -1,0 +1,10 @@
+<div class="counter-todo-container">
+  <button (click)="decrement()">-</button>
+  <span>{{ counter$ | async }}</span>
+  <button (click)="increment()">+</button>
+
+  <div *ngIf="todo$ | async as todo">
+    <h3>{{ todo.id }}</h3>
+    <p>{{ todo.title }}</p>
+  </div>
+</div>

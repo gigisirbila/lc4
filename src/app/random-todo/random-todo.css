@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+:host > div {
+  padding-left: 16px;
+}
+
+:host > div h3::before,
+:host > div p::before {
+  content: '• ';
+}

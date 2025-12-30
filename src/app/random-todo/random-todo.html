@@ -1,0 +1,7 @@
+<button #btn>Fetch Random Todo</button>
+
+<!-- I have some kind of error -->
+<div *ngIf="randomTodo$ | async as todo">
+  <h3>{{ todo.id }}</h3>
+  <p>{{ todo.title }}</p>
+</div>
